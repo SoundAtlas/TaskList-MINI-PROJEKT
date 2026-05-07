@@ -1,11 +1,10 @@
 ﻿using TaskManager.Core.Exceptions;
 using TaskManager.Core.Models;
 using TaskManager.Core.Repositories;
-using TaskManger.Core.Models;
 
 namespace TaskManager.Core
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -58,7 +57,7 @@ namespace TaskManager.Core
                             Console.Write("Title: ");
                             personalTask.Title = Console.ReadLine() ?? "";
 
-                            Console.Write("Catagory: ");
+                            Console.Write("Category: ");
                             personalTask.Category = Console.ReadLine() ?? "";
 
                             repo.Add(personalTask);

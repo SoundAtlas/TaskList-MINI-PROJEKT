@@ -1,5 +1,9 @@
 ﻿namespace TaskManager.Core.Models;
 
+
+/*[JsonPolymorphic(TypeDiscriminatorPropertyName = "$type")]
+[JsonDerivedType(typeof(WorkTask), "work")]
+[JsonDerivedType(typeof(PersonalTask), "personal")]*/
 public abstract class TaskBase : ITask
 {
     public int Id { get; set; }

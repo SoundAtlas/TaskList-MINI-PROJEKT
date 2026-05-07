@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TaskManager.Core.Models;
-
-namespace TaskManger.Core.Models;
+﻿namespace TaskManager.Core.Models;
 
 public class WorkTask : TaskBase
 {
