@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json;
 using TaskManager.Core.Exceptions;
 using TaskManager.Core.Models;
 
@@ -37,8 +33,7 @@ public class JsonTaskRepository : ITaskRepository
     public bool Remove(int id)
     {
         TaskBase task = GetById(id);
-        task.Remove(task);
-        return true;
+        return tasks.Remove(task);
     }
 
     public TaskBase GetById(int id)
@@ -95,3 +90,5 @@ public class JsonTaskRepository : ITaskRepository
     {
         return tasks.Count == 0 ? 1 : tasks.Max(task => task.Id) + 1;
     }
+
+}
