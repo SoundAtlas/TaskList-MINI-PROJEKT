@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TaskList MINI PROJEKT\TaskManager.Core.csproj" />
+    <ProjectReference Include="..\TaskManager.Core\TaskManager.Core.csproj" />
   </ItemGroup>
 
 </Project>

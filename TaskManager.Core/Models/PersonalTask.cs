@@ -8,9 +8,13 @@ public class PersonalTask : TaskBase
 {
     public string Category { get; set; } = "";
 
-    // TODO:
-    // Override GetTypeName() returnerer "Personal"
+    public override string GetTypeName()
+    {
+        return "Personal";
+    }
 
-    // TODO:
-    // Override Describe() saa Category ogsaa naevnes
+    public override string Describe()
+    {
+        return $"{base.Describe()} - Category: {Category}";
+    }
 }
